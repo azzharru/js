@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    //  var question = prompt("Загадка: Два кольца, два конца. Посередине гвоздик!")
+      //var answer = "ножницы"
+        var questions1 = prompt("Два конца, два кольца, \nПосередине гвоздик.");
+        var A1 = "ножницы"; 
+        var A2 = "ножнички";
+        var A3 = "секатор";
+        var question2 = prompt("Красна девица\nСидит в темнице,\nА коса на улице.");
+        var B1 = "морковь";
+        var B2 = "морковка"; 
+        var B3 = "морковочка";
+        var question3 = prompt("Многолюден, шумен, молод,\nПод землей грохочет город.\nА дома с народом тут\nВдоль по улице бегут.")
+        var C1 = "метро"; 
+        var C2 = "подземка"; 
+        var C3 = "метрополитен";
+        var rightAnswer = 0;
+        var incorrect = 0;
+        if ((questions1 == A1) || (questions1 == A2) || (questions1 == A3)){
+            rightAnswer+=1;
+        }else {
+            incorrect+=1;
+        }if ((question2 == B1) || (questions1 == B2) || (questions1 == B3)){
+            rightAnswer+=1;
+        } else {
+            incorrect+=1;
+        } if ((question3 == C1) || (questions1 == C2) || (questions1 == C3)){
+            rightAnswer+=1;
+        }else{
+            incorrect+=1;
+        }
+        alert("Your correct answer : " + rightAnswer + "\n incorrect answer : " + incorrect);
+    </script>
+</body>
+</html>

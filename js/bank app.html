@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = +prompt("Введите сумму вклада");
+        var proc = +prompt("Введите порцент годовывых");
+        var year = +prompt("На сколько лет");
+        proc = proc/100;
+        var kapital = 0;
+        for(var i = 0; i<year; i++){
+            sum=sum+(sum*proc);
+            kapital+=i + "year" + sum.toFixed(3);
+            
+        }
+        document.write(kapital + "\n");
+
+    </script>
+</body>
+</html>
